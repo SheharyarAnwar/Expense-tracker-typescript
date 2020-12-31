@@ -1,0 +1,49 @@
+.main {
+  background-color: var(--grey);
+  width: 100vw;
+  height: 100vh;
+  .container {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    .subContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      height: 90%;
+      .view {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        font-family: var(--primary-font);
+        color: var(--salmon);
+        font-weight: bolder;
+        align-items: center;
+        border-radius: 50px;
+        margin-bottom: 5vh;
+        background-color: white;
+
+        width: 30vw;
+        height: 65vh;
+        min-width: 385px;
+        min-height: 400px;
+        @media only screen and (max-width: 1000px) {
+          min-width: 330px;
+          height: 55vh;
+        }
+        /* width: 50%;
+        height: 80%; */
+        .viewWrapper {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          height: 90%;
+        }
+      }
+    }
+  }
+}

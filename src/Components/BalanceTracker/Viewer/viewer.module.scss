@@ -1,0 +1,23 @@
+.wrapper {
+  margin-top: 10px;
+  .capsule {
+    @media only screen and (max-width: 1000px) {
+      width: 115px;
+    }
+    width: 10vw;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+    background-color: var(--yellow);
+    p {
+      margin: 0;
+      display: inline-flex;
+    }
+  }
+  p {
+    margin-top: 10px;
+  }
+}

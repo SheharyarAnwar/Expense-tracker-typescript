@@ -1,0 +1,20 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .icon {
+    cursor: pointer;
+    margin-right: auto;
+    display: flex;
+    p {
+      margin-left: 20px;
+    }
+  }
+}
+.scrollableWrapper {
+  width: 100%;
+  height: 80%;
+  overflow-y: auto;
+}

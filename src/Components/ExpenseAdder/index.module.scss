@@ -1,0 +1,51 @@
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .modal {
+    background-color: white;
+    width: 70%;
+    height: 50%;
+    border-radius: 35px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modalContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 50%;
+      width: 80%;
+      margin-bottom: 20%;
+      input {
+        &:focus {
+          outline: none;
+          border-color: #eb2e16;
+        }
+        border-style: none;
+        padding: 5px;
+        border-bottom: 2px solid var(--salmon);
+      }
+    }
+    .button {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 0;
+      right: 0;
+      cursor: pointer;
+      width: 120px;
+      height: 60px;
+      background-color: var(--salmon);
+      border-radius: 25px 0 25px 0;
+    }
+  }
+}
